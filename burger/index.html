@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Выберите размер бургера</p>
+    <div class='size'>
+        <input name='size' type="radio" id='small' data-price='50' data-kkal="20" checked/>
+        <label for="small">Маленький</label>
+        
+        <input name='size' type="radio" id='big' data-price='100' data-kkal="40"/>
+        <label for="big">Большой</label>
+    </div>
+    
+    <p>Выберите начинку</p>
+    
+    <div class="fill">
+        <input type="checkbox" class="checkbox" id="chees"  data-price='10' data-kkal="20">
+        <label for="chees">С сыром</label>
+        
+        <input type="checkbox" class="checkbox" id="salat"  data-price='20' data-kkal="5">
+        <label for="salat">С салатом</label>
+        
+        <input type="checkbox" class="checkbox" id="potato"  data-price='15' data-kkal="10">
+        <label for="potato">С картофелем</label>
+        
+        <p>Добавить больше</p>
+        
+        <input type="checkbox" class="checkbox" id="seasoning"  data-price='15' data-kkal="0">
+        <label for="seasoning">Приправу</label>
+        
+        <input type="checkbox" class="checkbox" id="mayonnaise"  data-price='20' data-kkal="5">
+        <label for="mayonnaise">Майонез</label>
+    </div>
+
+   
+    <div>
+        Итого:
+        <p class="total"> </p>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+</html>
