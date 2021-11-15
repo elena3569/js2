@@ -1,8 +1,9 @@
-body {
+
+body{
     font-family: 'SF Pro Display', sans-serif;
 }
+header{
 
-header {
     display: flex;
     background-color: #2f2a2d;
     justify-content: space-between;
@@ -10,17 +11,20 @@ header {
     padding: 30px 80px;
 }
 
+
 button:focus {
     outline: none;
 }
 
-.logo {
-
-    text-transform: uppercase;
+button{
+    outline: none;
+}
+.logo{
+   text-transform: uppercase;
     font-weight: bold;
 }
 
-.btn-cart {
+.btn-cart{
     background-color: #fafafa;
     padding: 10px 20px;
     border: 1px solid transparent;
@@ -30,24 +34,16 @@ button:focus {
     cursor: pointer;
 }
 
-.btn-cart:hover {
+.btn-cart:hover{
     background-color: transparent;
     border-color: #fafafa;
     color: #fafafa;
 }
 
-.btn-cart,
-.logo {
+.btn-cart, .logo{
     align-self: center;
 }
-
-/*.products {*/
-/*display: flex;*/
-/*justify-content: space-between;*/
-/*flex-wrap: wrap;*/
-/*padding: 40px 80px;*/
-/*}*/
-.products {
+.products{
     column-gap: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
@@ -59,8 +55,7 @@ button:focus {
 p {
     margin: 0 0 5px 0;
 }
-
-.product-item {
+.product-item{
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -78,6 +73,7 @@ img {
     border: 1px solid #c0c0c040;
     padding: 15px
 }
+
 
 .cart {
     position: relative;
@@ -123,6 +119,7 @@ img {
     transition: all ease-in-out .4s;
     cursor: pointer;
 }
+
 
 .buy-btn:hover,
 .del-btn:hover {
@@ -218,4 +215,3 @@ img {
 .cart-dummy {
     font-size: 18px;
     height: auto;
-}
